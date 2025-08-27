@@ -13,7 +13,7 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    // new WOW().init();
 
     // Initiate AOS
     AOS.init();

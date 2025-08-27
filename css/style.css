@@ -4,6 +4,9 @@
   --secondary: #222222;
   --light: #f5f5f5;
   --dark: #0056a6;
+  --font-weight-bold: 700;
+  --font-weight-medium: 600;
+  --font-weight-semi-bold: 500;
 }
 
 body {
@@ -18,28 +21,16 @@ body {
   z-index: 99;
 }
 
-h1,
-h2,
-.h1,
-.h2,
-.fw-bold {
-  font-weight: 700 !important;
+h1, h2, .h1, .h2, .fw-bold {
+  font-weight: var(--font-weight-bold) !important;
 }
 
-h3,
-h4,
-.h3,
-.h4,
-.fw-medium {
-  font-weight: 600 !important;
+h3, h4, .h3, .h4, .fw-medium {
+  font-weight: var(--font-weight-medium) !important;
 }
 
-h5,
-h6,
-.h5,
-.h6,
-.fw-semi-bold {
-  font-weight: 500 !important;
+h5, h6, .h5, .h6, .fw-semi-bold {
+  font-weight: var(--font-weight-semi-bold) !important;
 }
 
 /*** Spinner ***/
@@ -59,7 +50,7 @@ h6,
 /*** Button ***/
 .btn {
   transition: 0.5s;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .btn-primary,
@@ -139,7 +130,7 @@ h6,
   padding: 20px 0;
   color: var(--dark);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   outline: none;
 }
 
